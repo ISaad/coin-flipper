@@ -12,6 +12,10 @@
     --coin-size: 180px;
     --font-stack: 'Outfit', sans-serif;
     --transition: 0.3s ease;
+    --heads-color: #FFD700;
+    --tails-color: #00AEEF;
+    --logo-accent: #ffffff;
+    --border-color: #333333;
 }
 
 .light-theme {
@@ -21,6 +25,8 @@
     --text-muted: #65676b;
     --gold: #d4a017;
     --gold-dim: #b8860b;
+    --logo-accent: #000000;
+    --border-color: #dddddd;
 }
 
 * {
@@ -52,14 +58,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
     font-weight: 900;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    background: linear-gradient(45deg, var(--gold), #fff);
+    background: linear-gradient(45deg, var(--gold), var(--logo-accent));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,9 +151,11 @@ main {
 }
 
 .stat-value {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    /* Was 1.5rem */
     font-weight: 900;
     color: var(--text-main);
+    line-height: 1.2;
 }
 
 /* Daily Rank Badge */
@@ -209,9 +217,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 8px solid var(--gold-dim);
-    background: radial-gradient(circle at 30% 30%, var(--gold), var(--gold-dim));
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 9px solid transparent;
+    /* Rim color set per side */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    /* Sharper, deeper shadow */
+    overflow: hidden;
+    outline: 1px solid rgba(255, 255, 255, 0.05);
+    /* Razor sharp edge */
 }
 
 .symbol {
@@ -222,10 +234,14 @@ main {
 }
 
 .heads {
+    background: radial-gradient(circle at 30% 30%, var(--heads-color), #b8860b);
+    border-color: #b8860b;
     transform: rotateY(0deg);
 }
 
 .tails {
+    background: radial-gradient(circle at 30% 30%, var(--tails-color), #0077a3);
+    border-color: #0077a3;
     transform: rotateY(180deg);
 }
 
@@ -266,40 +282,154 @@ main {
     flex: 1;
     padding: 18px;
     background: var(--bg-card);
-    border: 2px solid #444;
+    border: 3px solid #444;
     color: #fff;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-weight: 900;
+    font-size: 1.2rem;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.choice-btn[data-choice="HEADS"] {
+    border-color: var(--heads-color);
+    color: var(--heads-color);
+}
+
+.choice-btn[data-choice="TAILS"] {
+    border-color: var(--tails-color);
+    color: var(--tails-color);
 }
 
 .choice-btn:active {
-    transform: scale(0.95);
+    transform: scale(0.92);
+    /* Deeper press effect */
 }
 
-.choice-btn:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-    background: rgba(212, 160, 23, 0.1);
+.choice-btn[data-choice="HEADS"]:hover {
+    background: var(--heads-color);
+    color: #000;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+.choice-btn[data-choice="TAILS"]:hover {
+    background: var(--tails-color);
+    color: #000;
+    box-shadow: 0 0 25px rgba(0, 174, 239, 0.6);
+    transform: translateY(-2px);
 }
 
 /* Results & Viral */
 .result-message {
-    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    /* Extremely high to be over everything */
+    font-size: 1.2rem;
     font-weight: 900;
-    margin-bottom: 20px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    animation: slideDownBanner 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.result-message.dismiss {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+@keyframes slideDownBanner {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .result-message.win {
-    color: var(--accent);
+    background: var(--accent);
+    /* Wordle Green */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
 }
 
 .result-message.loss {
-    color: var(--danger);
+    background: var(--danger);
+    /* Red */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.result-message.info {
+    background: #333;
+    /* Dark Grey for neutral info */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Toasts */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.toast {
+    background: var(--bg-card);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-left: 4px solid var(--gold);
+    font-weight: 700;
+    animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+}
+
+.toast.error {
+    border-left-color: var(--danger);
+}
+
+.toast.success {
+    border-left-color: var(--accent);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
 }
 
 .viral-btn {
@@ -548,10 +678,7 @@ select {
     text-overflow: ellipsis;
 }
 
-.ranking-row .flag {
-    font-size: 1.2rem;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
+
 
 .ranking-row .name {
     font-weight: 500;
@@ -628,11 +755,12 @@ select {
 .small-btn {
     background: var(--bg-card);
     border: 1px solid #444;
-    color: #fff;
+    color: var(--text-main);
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .settings-list {

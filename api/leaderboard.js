@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
         // Top 50 Today
         const { data: daily } = await supabase
             .from('games')
-            .select('user_id, score, users(username, country_code)')
+            .select('user_id, score, users(username)')
             .eq('played_at', today)
             .order('score', { ascending: false })
             .limit(50);
@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
         // Top 50 All Time
         const { data: allTime } = await supabase
             .from('users')
-            .select('username, country_code, max_streak')
+            .select('username, max_streak')
             .order('max_streak', { ascending: false })
             .limit(50);
 

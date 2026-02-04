@@ -1,3 +1,5 @@
 .env
 .env.local
 node_modules/
+server_debug.log
+server_log.txt

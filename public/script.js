@@ -214,13 +214,13 @@ async function handleFlip(choice) {
 
             if (data.win) {
                 resetControls();
-                showToast('STREAK INCREASED! +1', 'success');
+                showBanner('RIGHT! 🎉', 'win');
             } else {
                 if (data.game_over) {
                     endGameLocal(true);
                 } else {
                     resetControls();
-                    showToast(`WRONG! ${state.lives} lives left`, 'error');
+                    showBanner(`WRONG! ${state.lives} lives left 💔`, 'loss');
                 }
             }
         });
@@ -278,21 +278,36 @@ function resetControls() {
     // We keep it showing result until next flip.
 }
 
+function showBanner(text, type) {
+    els.resultMsg.textContent = text;
+    els.resultMsg.className = `result-message ${type}`;
+    els.resultMsg.classList.remove('hidden');
+    els.resultMsg.classList.remove('dismiss');
+
+    setTimeout(() => {
+        els.resultMsg.classList.add('dismiss');
+        setTimeout(() => {
+            if (els.resultMsg.classList.contains('dismiss')) {
+                els.resultMsg.classList.add('hidden');
+            }
+        }, 400);
+    }, 2200);
+}
+
 function endGameLocal(justLost) {
     state.canPlay = false;
     els.controls.classList.add('hidden');
-    els.resultMsg.classList.remove('hidden');
     els.shareBtn.classList.remove('hidden');
 
     // Change coloring
     els.streakVal.style.color = 'var(--danger)';
 
     if (justLost) {
-        els.resultMsg.textContent = `FINAL SCORE: ${state.bestToday}`;
-        els.resultMsg.className = "result-message loss";
+        // Red streak value is enough, user said banner not necessary
+        els.resultMsg.classList.add('hidden');
     } else {
-        els.resultMsg.textContent = `TODAY'S SCORE: ${state.bestToday}`;
-        els.resultMsg.className = "result-message";
+        // Existing finished games
+        els.resultMsg.classList.add('hidden');
         els.streakVal.style.color = 'var(--text-muted)';
     }
 }
@@ -341,7 +356,6 @@ function renderLeaderboard(list) {
     }
     els.rankingsList.innerHTML = list.map((item, i) => {
         const username = item.username || item.users?.username || 'Anon';
-        const country = item.country_code || item.users?.country_code || item.country || 'XX';
         const score = item.score !== undefined ? item.score : (item.max_streak !== undefined ? item.max_streak : 0);
         const rank = i + 1;
         const topClass = rank <= 3 ? `top-${rank}` : '';
@@ -350,7 +364,6 @@ function renderLeaderboard(list) {
             <div class="ranking-row ${topClass}">
                 <div class="rank">#${rank}</div>
                 <div class="user-info">
-                    <span class="flag">${getFlag(country)}</span>
                     <span class="name">${username}</span>
                 </div>
                 <div class="score">${score}</div>
@@ -359,10 +372,7 @@ function renderLeaderboard(list) {
     }).join('');
 }
 
-function getFlag(cc) {
-    if (!cc || cc === 'XX') return '🌍';
-    return cc.toUpperCase().replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397));
-}
+
 
 function setupListeners() {
     document.querySelectorAll('.choice-btn').forEach(btn => {
@@ -395,8 +405,30 @@ function setupListeners() {
 }
 
 function getRandomName() {
-    const adjectives = ['Cool', 'Swift', 'Bold', 'Golden', 'Lucky', 'Epic', 'Magic', 'Shadow'];
-    const nouns = ['Flipper', 'Whale', 'Ninja', 'Shark', 'Falcon', 'Tiger', 'Lion', 'Falcon'];
+    const adjectives = [
+        'Cool', 'Swift', 'Bold', 'Golden', 'Lucky', 'Epic', 'Magic', 'Shadow', 'Bright', 'Stormy',
+        'Silent', 'Wise', 'Hyper', 'Turbo', 'Mega', 'Ultra', 'Giga', 'Crazy', 'Super', 'Wild',
+        'Mystic', 'Dark', 'Light', 'Fire', 'Frost', 'Iron', 'Steel', 'Grand', 'Elite', 'Prime',
+        'Atomic', 'Cosmic', 'Solar', 'Lunar', 'Star', 'Vivid', 'Sharp', 'Quick', 'Fast', 'Sonic',
+        'Hero', 'Noble', 'Brave', 'Strong', 'Mighty', 'Ancient', 'Future', 'Cyber', 'Neon', 'Techno',
+        'Metal', 'Delta', 'Sigma', 'Omega', 'Alpha', 'Zeta', 'Phantom', 'Ghost', 'Spirit', 'Soul',
+        'Thunder', 'Lightning', 'Blaze', 'Aero', 'Aqua', 'Terra', 'Geo', 'Bio', 'Digital',
+        'Virtual', 'Master', 'Elite', 'Grand', 'Royal', 'Divine', 'Radiant', 'Frosty', 'Volcanic',
+        'Static', 'Electric', 'Plasma', 'Crystal', 'Diamond', 'Steel', 'Stone', 'Marble', 'Velvet', 'Silk',
+        'Midnight', 'Twilight', 'Dawn', 'Dusk', 'Aurora', 'Eclipse', 'Zen', 'Karma', 'Alpha', 'Nova'
+    ];
+    const nouns = [
+        'Flipper', 'Whale', 'Ninja', 'Shark', 'Falcon', 'Tiger', 'Lion', 'Eagle', 'Wolf', 'Dragon',
+        'Phoenix', 'Raven', 'Panda', 'Racer', 'Player', 'King', 'Queen', 'Knight', 'Hero', 'Ghost',
+        'Titan', 'Giant', 'Rocket', 'Pilot', 'Surfer', 'Hunter', 'Seeker', 'Master', 'Wiz', 'Sage',
+        'Striker', 'Blazer', 'Glider', 'Drifter', 'Runner', 'Walker', 'Jumper', 'Spinner', 'Roller',
+        'Crasher', 'Smasher', 'Breaker', 'Maker', 'Shaker', 'Taker', 'Finder', 'Keeper', 'Winner', 'Star',
+        'Ace', 'Bolt', 'Flash', 'Dash', 'Rush', 'Swift', 'Flyer', 'Driver', 'Captain', 'Commander',
+        'Chief', 'Boss', 'Lord', 'Duke', 'Baron', 'Prince', 'General', 'Warrior', 'Soldier', 'Scout',
+        'Sniper', 'Gunner', 'Blast', 'Boom', 'Zap', 'Zing', 'Zoom', 'Vibe', 'Flow', 'Beat',
+        'Blade', 'Sword', 'Shield', 'Bow', 'Arrow', 'Spear', 'Axe', 'Hammer', 'Wand', 'Staff',
+        'Orb', 'Stone', 'Gem', 'Crown', 'Throne', 'Cape', 'Mask', 'Helm', 'Boots', 'Glove'
+    ];
     const num = Math.floor(Math.random() * 999);
     return `${adjectives[Math.floor(Math.random() * adjectives.length)]}${nouns[Math.floor(Math.random() * nouns.length)]}${num}`;
 }

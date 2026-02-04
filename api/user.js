@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
         return sendError(res, 'Method Not Allowed', 405);
     }
 
-    const { username, country_code } = req.body;
+    const { username } = req.body;
     let { userId } = req.body;
 
     if (username && username.length > 20) {
@@ -27,7 +27,6 @@ module.exports = async (req, res) => {
 
             const payload = { id: userId };
             if (username) payload.username = username;
-            if (country_code) payload.country_code = country_code;
 
             const { data: upserted, error: upsertErr } = await supabase
                 .from('users')
@@ -44,8 +43,7 @@ module.exports = async (req, res) => {
                 .from('users')
                 .insert([{
                     id: newId,
-                    username: username || 'Anonymous',
-                    country_code: country_code || 'XX'
+                    username: username || 'Anonymous'
                 }])
                 .select();
 

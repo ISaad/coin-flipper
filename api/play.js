@@ -12,10 +12,10 @@ module.exports = async (req, res) => {
     // Helper to ensure user exists
     async function getOrCreateUser(userId) {
         if (!userId) return null;
-        
+
         // Try to fetch
         let { data: user, error } = await supabase.from('users').select('*').eq('id', userId).single();
-        
+
         if (error && error.code === 'PGRST116') {
             // Not found, try to create it if it's a valid UUID
             const isUUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(userId);
@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
                     .insert([{ id: userId, username: 'Guest', country_code: 'XX' }])
                     .select()
                     .single();
-                
+
                 if (!createError) return newUser;
             }
             return null;
@@ -52,13 +52,13 @@ module.exports = async (req, res) => {
             if (error && error.code !== 'PGRST116') throw error;
 
             if (!game) {
-                return sendJSON(res, { 
-                    can_play: true, 
-                    current_streak: 0, 
-                    best_today: 0, 
+                return sendJSON(res, {
+                    can_play: true,
+                    current_streak: 0,
+                    best_today: 0,
                     lives: 3,
-                    history_today: [], 
-                    user 
+                    history_today: [],
+                    user
                 });
             }
 
@@ -113,7 +113,7 @@ module.exports = async (req, res) => {
             // Security Check: Is the game still active?
             if (game && (game.is_active === false || game.lives <= 0)) {
                 console.log(`[PLAY_API] User ${user.username} already finished today.`);
-                return sendError(res, 'Game already finished for today', 403);
+                return sendError(res, 'You\'ve used all 3 lives today! Come back tomorrow for a new game 🎯', 403);
             }
 
             const currentStreak = game ? Number(game.current_streak || 0) : 0;
