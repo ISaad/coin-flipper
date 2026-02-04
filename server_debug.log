@@ -1,0 +1,475 @@
+[INFO] 2026-01-29T12:04:39.383Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-01-29T12:04:39.384Z -    http://localhost:3000
+
+[INFO] 2026-01-29T12:05:04.130Z - GET /
+[INFO] 2026-01-29T12:05:04.151Z - GET /styles.css
+[INFO] 2026-01-29T12:05:04.152Z - GET /toasts.css
+[INFO] 2026-01-29T12:05:04.153Z - GET /script.js
+[INFO] 2026-01-29T12:05:04.402Z - GET /favicon.ico
+[INFO] 2026-01-29T12:05:09.005Z - POST /api/user
+[INFO] 2026-01-29T12:05:09.009Z - [USER_API] Creating brand new user: 7b016640-6eda-4dc7-8d6d-49d79266b7b6
+[INFO] 2026-01-29T12:05:09.400Z - GET /api/play
+[INFO] 2026-01-29T12:05:10.884Z - POST /api/play
+[INFO] 2026-01-29T12:05:10.884Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:11.089Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":1,"current_streak":1,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:14.707Z - POST /api/play
+[INFO] 2026-01-29T12:05:14.708Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:14.876Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":2,"current_streak":2,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:18.833Z - POST /api/play
+[INFO] 2026-01-29T12:05:18.833Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:19.186Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":3,"current_streak":3,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:22.467Z - POST /api/play
+[INFO] 2026-01-29T12:05:22.468Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:22.634Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":4,"current_streak":4,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:26.345Z - POST /api/play
+[INFO] 2026-01-29T12:05:26.346Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:26.523Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":5,"current_streak":5,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:30.056Z - POST /api/play
+[INFO] 2026-01-29T12:05:30.057Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:30.227Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":6,"current_streak":6,"lives":3,"is_active":true}
+[INFO] 2026-01-29T12:05:34.144Z - POST /api/play
+[INFO] 2026-01-29T12:05:34.144Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:34.437Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":6,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:05:39.489Z - POST /api/play
+[INFO] 2026-01-29T12:05:39.490Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:39.753Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":6,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:05:43.505Z - POST /api/play
+[INFO] 2026-01-29T12:05:43.505Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:43.715Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":6,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:05:47.377Z - POST /api/play
+[INFO] 2026-01-29T12:05:47.378Z - [PLAY_API] START Request - User ID: "7b016640-6eda-4dc7-8d6d-49d79266b7b6"
+[INFO] 2026-01-29T12:05:47.564Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"7b016640-6eda-4dc7-8d6d-49d79266b7b6","played_at":"2026-01-29","score":6,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:05:54.729Z - POST /api/user
+[INFO] 2026-01-29T12:05:54.729Z - [USER_API] Attempting to update/create user: test-uuid-i31sm8
+[ERROR] 2026-01-29T12:05:54.880Z - [USER_API] Exception: {"code":"22P02","details":null,"hint":null,"message":"invalid input syntax for type uuid: \"test-uuid-i31sm8\""}
+[INFO] 2026-01-29T12:05:54.884Z - GET /api/play
+[INFO] 2026-01-29T12:05:54.986Z - POST /api/play
+[INFO] 2026-01-29T12:05:54.987Z - [PLAY_API] START Request - User ID: "test-uuid-i31sm8"
+[ERROR] 2026-01-29T12:05:55.109Z - [PLAY_API] User "test-uuid-i31sm8" NOT FOUND and could not be created.
+[INFO] 2026-01-29T12:06:04.349Z - POST /api/user
+[INFO] 2026-01-29T12:06:04.349Z - [USER_API] Attempting to update/create user: 12345678-1234-4321-8abc-f10d03546afd
+[INFO] 2026-01-29T12:06:04.560Z - GET /api/play
+[INFO] 2026-01-29T12:06:04.758Z - POST /api/play
+[INFO] 2026-01-29T12:06:04.758Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:04.920Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:05.004Z - POST /api/play
+[INFO] 2026-01-29T12:06:05.004Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:05.170Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":1,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:05.356Z - POST /api/play
+[INFO] 2026-01-29T12:06:05.357Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:05.530Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":1,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:05.616Z - POST /api/play
+[INFO] 2026-01-29T12:06:05.616Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:05.785Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":1,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:05.918Z - POST /api/play
+[INFO] 2026-01-29T12:06:05.918Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:06.087Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":2,"current_streak":2,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:06.254Z - POST /api/play
+[INFO] 2026-01-29T12:06:06.254Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:06.432Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":3,"current_streak":3,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:06.674Z - POST /api/play
+[INFO] 2026-01-29T12:06:06.674Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:06.850Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":4,"current_streak":4,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:07.031Z - POST /api/play
+[INFO] 2026-01-29T12:06:07.032Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:07.220Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-f10d03546afd","played_at":"2026-01-29","score":4,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:06:07.322Z - POST /api/play
+[INFO] 2026-01-29T12:06:07.322Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-f10d03546afd"
+[INFO] 2026-01-29T12:06:07.483Z - [PLAY_API] User TestBot already finished today.
+[INFO] 2026-01-29T12:06:20.834Z - POST /api/user
+[INFO] 2026-01-29T12:06:20.834Z - [USER_API] Attempting to update/create user: 12345678-1234-4321-8abc-0188dca8e729
+[INFO] 2026-01-29T12:06:20.971Z - GET /api/play
+[INFO] 2026-01-29T12:06:21.186Z - POST /api/play
+[INFO] 2026-01-29T12:06:21.186Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-0188dca8e729"
+[INFO] 2026-01-29T12:06:21.339Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-0188dca8e729","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:21.423Z - POST /api/play
+[INFO] 2026-01-29T12:06:21.423Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-0188dca8e729"
+[INFO] 2026-01-29T12:06:21.584Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-0188dca8e729","played_at":"2026-01-29","score":0,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:21.666Z - POST /api/play
+[INFO] 2026-01-29T12:06:21.666Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-0188dca8e729"
+[INFO] 2026-01-29T12:06:21.834Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-0188dca8e729","played_at":"2026-01-29","score":1,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:22.000Z - POST /api/play
+[INFO] 2026-01-29T12:06:22.001Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-0188dca8e729"
+[INFO] 2026-01-29T12:06:22.166Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-0188dca8e729","played_at":"2026-01-29","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:06:22.250Z - POST /api/play
+[INFO] 2026-01-29T12:06:22.250Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-0188dca8e729"
+[INFO] 2026-01-29T12:06:22.435Z - [PLAY_API] User TestBot already finished today.
+[INFO] 2026-01-29T12:06:23.989Z - GET /api/leaderboard
+[INFO] 2026-01-29T12:06:27.027Z - POST /api/user
+[INFO] 2026-01-29T12:06:27.027Z - [USER_API] Attempting to update/create user: 12345678-1234-4321-8abc-b9209158fc4d
+[INFO] 2026-01-29T12:06:27.124Z - GET /api/play
+[INFO] 2026-01-29T12:06:27.287Z - POST /api/play
+[INFO] 2026-01-29T12:06:27.287Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:27.511Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:27.597Z - POST /api/play
+[INFO] 2026-01-29T12:06:27.598Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:27.749Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":1,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:27.919Z - POST /api/play
+[INFO] 2026-01-29T12:06:27.919Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:28.100Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":2,"current_streak":2,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:28.269Z - POST /api/play
+[INFO] 2026-01-29T12:06:28.269Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:28.487Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":2,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:28.569Z - POST /api/play
+[INFO] 2026-01-29T12:06:28.570Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:28.743Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":2,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:28.830Z - POST /api/play
+[INFO] 2026-01-29T12:06:28.830Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:28.990Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-b9209158fc4d","played_at":"2026-01-29","score":2,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:06:29.084Z - POST /api/play
+[INFO] 2026-01-29T12:06:29.084Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-b9209158fc4d"
+[INFO] 2026-01-29T12:06:29.290Z - [PLAY_API] User TestBot already finished today.
+[INFO] 2026-01-29T12:06:40.050Z - POST /api/user
+[INFO] 2026-01-29T12:06:40.050Z - [USER_API] Attempting to update/create user: 12345678-1234-4321-8abc-744d60747ad2
+[INFO] 2026-01-29T12:06:40.194Z - GET /api/play
+[INFO] 2026-01-29T12:06:40.363Z - POST /api/play
+[INFO] 2026-01-29T12:06:40.363Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-744d60747ad2"
+[INFO] 2026-01-29T12:06:40.522Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-744d60747ad2","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:06:40.604Z - POST /api/play
+[INFO] 2026-01-29T12:06:40.604Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-744d60747ad2"
+[INFO] 2026-01-29T12:06:40.768Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-744d60747ad2","played_at":"2026-01-29","score":0,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:40.865Z - POST /api/play
+[INFO] 2026-01-29T12:06:40.865Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-744d60747ad2"
+[INFO] 2026-01-29T12:06:41.012Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-744d60747ad2","played_at":"2026-01-29","score":1,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:06:41.180Z - POST /api/play
+[INFO] 2026-01-29T12:06:41.181Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-744d60747ad2"
+[INFO] 2026-01-29T12:06:41.333Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-744d60747ad2","played_at":"2026-01-29","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:06:41.407Z - POST /api/play
+[INFO] 2026-01-29T12:06:41.407Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-744d60747ad2"
+[INFO] 2026-01-29T12:06:41.556Z - [PLAY_API] User TestBot already finished today.
+[INFO] 2026-01-29T12:06:45.084Z - GET /api/leaderboard
+[INFO] 2026-01-29T12:07:04.238Z - POST /api/user
+[INFO] 2026-01-29T12:07:04.238Z - [USER_API] Attempting to update/create user: 12345678-1234-4321-8abc-8467be06876f
+[INFO] 2026-01-29T12:07:04.365Z - GET /api/play
+[INFO] 2026-01-29T12:07:04.527Z - POST /api/play
+[INFO] 2026-01-29T12:07:04.527Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:04.679Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-8467be06876f","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:07:04.755Z - POST /api/play
+[INFO] 2026-01-29T12:07:04.755Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:04.935Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-8467be06876f","played_at":"2026-01-29","score":1,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:07:05.126Z - POST /api/play
+[INFO] 2026-01-29T12:07:05.126Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:05.280Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-8467be06876f","played_at":"2026-01-29","score":1,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:07:05.352Z - POST /api/play
+[INFO] 2026-01-29T12:07:05.352Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:05.508Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-8467be06876f","played_at":"2026-01-29","score":1,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-01-29T12:07:05.589Z - POST /api/play
+[INFO] 2026-01-29T12:07:05.589Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:05.736Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"12345678-1234-4321-8abc-8467be06876f","played_at":"2026-01-29","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-01-29T12:07:05.814Z - POST /api/play
+[INFO] 2026-01-29T12:07:05.815Z - [PLAY_API] START Request - User ID: "12345678-1234-4321-8abc-8467be06876f"
+[INFO] 2026-01-29T12:07:05.967Z - [PLAY_API] User TestBot already finished today.
+[INFO] 2026-01-29T12:07:19.950Z - GET /api/play
+[INFO] 2026-01-29T12:07:20.277Z - POST /api/play
+[INFO] 2026-01-29T12:07:20.277Z - [PLAY_API] START Request - User ID: "99999999-9999-9999-9999-d731f5648cc5"
+[INFO] 2026-01-29T12:07:20.596Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"99999999-9999-9999-9999-d731f5648cc5","played_at":"2026-01-29","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-01-29T12:09:54.274Z - GET /
+[INFO] 2026-01-29T12:09:54.310Z - GET /styles.css
+[INFO] 2026-01-29T12:09:54.311Z - GET /toasts.css
+[INFO] 2026-01-29T12:09:54.312Z - GET /script.js
+[INFO] 2026-01-29T12:10:25.118Z - GET /api/leaderboard
+[INFO] 2026-01-29T13:02:54.318Z - GET /
+[INFO] 2026-01-29T13:02:54.331Z - GET /styles.css
+[INFO] 2026-01-29T13:02:54.333Z - GET /toasts.css
+[INFO] 2026-01-29T13:02:54.333Z - GET /script.js
+[INFO] 2026-01-29T13:02:54.343Z - GET /api/play
+[INFO] 2026-01-29T13:02:59.761Z - GET /
+[INFO] 2026-01-29T13:02:59.771Z - GET /styles.css
+[INFO] 2026-01-29T13:02:59.772Z - GET /toasts.css
+[INFO] 2026-01-29T13:02:59.772Z - GET /script.js
+[INFO] 2026-01-29T13:02:59.778Z - GET /api/play
+[INFO] 2026-01-29T13:03:01.031Z - GET /
+[INFO] 2026-01-29T13:03:01.042Z - GET /styles.css
+[INFO] 2026-01-29T13:03:01.042Z - GET /toasts.css
+[INFO] 2026-01-29T13:03:01.043Z - GET /script.js
+[INFO] 2026-01-29T13:03:01.048Z - GET /api/play
+[INFO] 2026-02-04T08:04:52.848Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-02-04T08:04:52.849Z -    http://localhost:3000
+
+[INFO] 2026-02-04T08:05:15.194Z - GET /script.js
+[INFO] 2026-02-04T08:05:15.201Z - GET /api/play
+[INFO] 2026-02-04T08:05:15.403Z - GET /icon.png
+[INFO] 2026-02-04T08:05:16.887Z - GET /sw.js
+[INFO] 2026-02-04T08:05:24.753Z - GET /icon.png
+[INFO] 2026-02-04T08:05:40.261Z - GET /icon.png
+[INFO] 2026-02-04T08:05:45.578Z - GET /api/user
+[INFO] 2026-02-04T08:05:45.591Z - GET /favicon.ico
+[INFO] 2026-02-04T08:05:47.151Z - GET /sw.js
+[INFO] 2026-02-04T08:05:52.012Z - GET /icon.png
+[INFO] 2026-02-04T08:06:00.298Z - GET /index.html
+[INFO] 2026-02-04T08:06:00.305Z - GET /styles.css
+[INFO] 2026-02-04T08:06:00.306Z - GET /toasts.css
+[INFO] 2026-02-04T08:06:02.299Z - GET /sw.js
+[INFO] 2026-02-04T08:06:11.889Z - GET /index.html
+[INFO] 2026-02-04T08:06:11.897Z - GET /styles.css
+[INFO] 2026-02-04T08:06:11.898Z - GET /toasts.css
+[INFO] 2026-02-04T08:06:13.460Z - GET /sw.js
+[INFO] 2026-02-04T08:07:04.164Z - GET /sw.js
+[INFO] 2026-02-04T08:07:09.757Z - GET /script.js
+[INFO] 2026-02-04T08:07:11.366Z - GET /sw.js
+[INFO] 2026-02-04T08:07:15.157Z - GET /script.js
+[INFO] 2026-02-04T08:07:16.694Z - GET /sw.js
+[INFO] 2026-02-04T08:07:19.889Z - GET /script.js
+[INFO] 2026-02-04T08:07:20.148Z - GET /icon.png
+[INFO] 2026-02-04T08:07:21.567Z - GET /sw.js
+[INFO] 2026-02-04T08:07:24.178Z - GET /index.html
+[INFO] 2026-02-04T08:07:24.186Z - GET /styles.css
+[INFO] 2026-02-04T08:07:24.186Z - GET /toasts.css
+[INFO] 2026-02-04T08:07:25.806Z - GET /sw.js
+[INFO] 2026-02-04T08:08:13.446Z - GET /script.js
+[INFO] 2026-02-04T08:08:18.787Z - POST /api/user
+[INFO] 2026-02-04T08:08:18.789Z - [USER_API] Creating brand new user: 859214a9-a11b-4026-b82d-a3dfb762c263
+[INFO] 2026-02-04T08:08:18.792Z - POST /api/user
+[INFO] 2026-02-04T08:08:18.792Z - [USER_API] Creating brand new user: d2717e1b-790e-442c-9622-cdc391b5f297
+[ERROR] 2026-02-04T08:08:19.074Z - [USER_API] Exception: {"code":"42501","details":null,"hint":null,"message":"permission denied for table users"}
+[ERROR] 2026-02-04T08:08:19.076Z - [USER_API] Exception: {"code":"42501","details":null,"hint":null,"message":"permission denied for table users"}
+[INFO] 2026-02-04T08:08:30.719Z - GET /index.html
+[INFO] 2026-02-04T08:08:30.727Z - GET /styles.css
+[INFO] 2026-02-04T08:08:30.728Z - GET /toasts.css
+[INFO] 2026-02-04T08:08:32.275Z - GET /sw.js
+[INFO] 2026-02-04T08:08:42.269Z - GET /script.js
+[INFO] 2026-02-04T08:08:42.272Z - GET /api/play
+[INFO] 2026-02-04T08:08:42.411Z - GET /api/play
+[INFO] 2026-02-04T08:08:48.710Z - GET /script.js
+[INFO] 2026-02-04T08:08:50.312Z - GET /sw.js
+[INFO] 2026-02-04T08:08:55.507Z - POST /api/user
+[INFO] 2026-02-04T08:08:55.507Z - [USER_API] Creating brand new user: c95a8fb6-2e0a-4d46-991e-e5f2d015233c
+[ERROR] 2026-02-04T08:08:55.714Z - [USER_API] Exception: {"code":"42501","details":null,"hint":null,"message":"permission denied for table users"}
+[INFO] 2026-02-04T08:09:07.900Z - GET /index.html
+[INFO] 2026-02-04T08:09:07.907Z - GET /styles.css
+[INFO] 2026-02-04T08:09:07.908Z - GET /toasts.css
+[INFO] 2026-02-04T08:09:09.519Z - GET /sw.js
+[INFO] 2026-02-04T08:10:16.237Z - GET /sw.js
+[INFO] 2026-02-04T08:15:46.316Z - GET /sw.js
+[INFO] 2026-02-04T08:21:16.377Z - GET /sw.js
+[INFO] 2026-02-04T08:26:46.454Z - GET /sw.js
+[INFO] 2026-02-04T08:29:31.314Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-02-04T08:29:31.314Z -    http://localhost:3000
+
+[INFO] 2026-02-04T08:30:58.333Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-02-04T08:30:58.333Z -    http://localhost:3000
+
+[INFO] 2026-02-04T08:31:20.484Z - GET /styles.css
+[INFO] 2026-02-04T08:31:20.489Z - GET /constants.js
+[INFO] 2026-02-04T08:31:20.490Z - GET /articles.js
+[INFO] 2026-02-04T08:31:20.491Z - GET /script.js
+[INFO] 2026-02-04T08:31:20.495Z - GET /api/play
+[INFO] 2026-02-04T08:31:22.268Z - GET /sw.js
+[INFO] 2026-02-04T08:31:26.079Z - GET /
+[INFO] 2026-02-04T08:31:26.088Z - GET /styles.css
+[INFO] 2026-02-04T08:31:26.089Z - GET /toasts.css
+[INFO] 2026-02-04T08:31:26.091Z - GET /script.js
+[INFO] 2026-02-04T08:31:26.452Z - GET /favicon.ico
+[INFO] 2026-02-04T08:31:28.951Z - POST /api/user
+[INFO] 2026-02-04T08:31:28.953Z - [USER_API] Creating brand new user: d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd
+[INFO] 2026-02-04T08:31:29.111Z - GET /api/play
+[INFO] 2026-02-04T08:31:31.087Z - POST /api/play
+[INFO] 2026-02-04T08:31:31.088Z - [PLAY_API] START Request - User ID: "d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd"
+[INFO] 2026-02-04T08:31:31.250Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd","played_at":"2026-02-04","score":1,"current_streak":1,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:31:34.942Z - POST /api/play
+[INFO] 2026-02-04T08:31:34.943Z - [PLAY_API] START Request - User ID: "d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd"
+[INFO] 2026-02-04T08:31:35.154Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd","played_at":"2026-02-04","score":1,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:31:40.927Z - POST /api/play
+[INFO] 2026-02-04T08:31:40.928Z - [PLAY_API] START Request - User ID: "d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd"
+[INFO] 2026-02-04T08:31:41.242Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd","played_at":"2026-02-04","score":1,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-02-04T08:31:45.199Z - POST /api/play
+[INFO] 2026-02-04T08:31:45.199Z - [PLAY_API] START Request - User ID: "d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd"
+[INFO] 2026-02-04T08:31:45.484Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"d7394e3b-1183-4bc2-a3e8-69fe6e3a6ddd","played_at":"2026-02-04","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-02-04T08:31:52.448Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:32:16.550Z - GET /sw.js
+[INFO] 2026-02-04T08:33:54.717Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:38:03.118Z - GET /
+[INFO] 2026-02-04T08:38:03.125Z - GET /styles.css
+[INFO] 2026-02-04T08:38:03.126Z - GET /toasts.css
+[INFO] 2026-02-04T08:38:03.128Z - GET /script.js
+[INFO] 2026-02-04T08:38:05.934Z - POST /api/user
+[INFO] 2026-02-04T08:38:05.935Z - [USER_API] Creating brand new user: b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b
+[INFO] 2026-02-04T08:38:06.162Z - GET /api/play
+[INFO] 2026-02-04T08:38:09.670Z - POST /api/play
+[INFO] 2026-02-04T08:38:09.671Z - [PLAY_API] START Request - User ID: "b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b"
+[INFO] 2026-02-04T08:38:09.880Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b","played_at":"2026-02-04","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:38:13.614Z - POST /api/play
+[INFO] 2026-02-04T08:38:13.615Z - [PLAY_API] START Request - User ID: "b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b"
+[INFO] 2026-02-04T08:38:13.841Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b","played_at":"2026-02-04","score":0,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-02-04T08:38:17.334Z - POST /api/play
+[INFO] 2026-02-04T08:38:17.335Z - [PLAY_API] START Request - User ID: "b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b"
+[INFO] 2026-02-04T08:38:17.593Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b","played_at":"2026-02-04","score":1,"current_streak":1,"lives":1,"is_active":true}
+[INFO] 2026-02-04T08:38:20.759Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:38:21.838Z - POST /api/play
+[INFO] 2026-02-04T08:38:21.839Z - [PLAY_API] START Request - User ID: "b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b"
+[INFO] 2026-02-04T08:38:21.987Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b8b2e06f-ca13-4b33-bd91-c39f9bd1f03b","played_at":"2026-02-04","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-02-04T08:38:25.103Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:39:03.122Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-02-04T08:39:03.123Z -    http://localhost:3000
+
+[INFO] 2026-02-04T08:39:14.591Z - GET /
+[INFO] 2026-02-04T08:39:14.600Z - GET /styles.css
+[INFO] 2026-02-04T08:39:14.604Z - GET /toasts.css
+[INFO] 2026-02-04T08:39:14.607Z - GET /script.js
+[INFO] 2026-02-04T08:39:16.982Z - POST /api/user
+[INFO] 2026-02-04T08:39:16.985Z - [USER_API] Creating brand new user: 061042ee-0076-4566-a052-559696b90079
+[INFO] 2026-02-04T08:39:17.260Z - GET /api/play
+[INFO] 2026-02-04T08:39:18.782Z - POST /api/play
+[INFO] 2026-02-04T08:39:18.784Z - [PLAY_API] START Request - User ID: "061042ee-0076-4566-a052-559696b90079"
+[INFO] 2026-02-04T08:39:18.942Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"061042ee-0076-4566-a052-559696b90079","played_at":"2026-02-04","score":1,"current_streak":1,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:39:22.127Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:39:22.998Z - POST /api/play
+[INFO] 2026-02-04T08:39:22.999Z - [PLAY_API] START Request - User ID: "061042ee-0076-4566-a052-559696b90079"
+[INFO] 2026-02-04T08:39:23.171Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"061042ee-0076-4566-a052-559696b90079","played_at":"2026-02-04","score":2,"current_streak":2,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:39:26.348Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:39:27.198Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:39:51.095Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:41:34.854Z - GET /
+[INFO] 2026-02-04T08:41:34.862Z - GET /styles.css
+[INFO] 2026-02-04T08:41:34.864Z - GET /toasts.css
+[INFO] 2026-02-04T08:41:34.865Z - GET /script.js
+[INFO] 2026-02-04T08:41:36.775Z - POST /api/user
+[INFO] 2026-02-04T08:41:36.775Z - [USER_API] Creating brand new user: 207fd771-3e32-4c8a-a3b7-b26e08f21c7d
+[INFO] 2026-02-04T08:41:36.921Z - GET /api/play
+[INFO] 2026-02-04T08:41:38.615Z - POST /api/play
+[INFO] 2026-02-04T08:41:38.615Z - [PLAY_API] START Request - User ID: "207fd771-3e32-4c8a-a3b7-b26e08f21c7d"
+[INFO] 2026-02-04T08:41:38.774Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"207fd771-3e32-4c8a-a3b7-b26e08f21c7d","played_at":"2026-02-04","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:41:42.070Z - POST /api/play
+[INFO] 2026-02-04T08:41:42.071Z - [PLAY_API] START Request - User ID: "207fd771-3e32-4c8a-a3b7-b26e08f21c7d"
+[INFO] 2026-02-04T08:41:42.234Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"207fd771-3e32-4c8a-a3b7-b26e08f21c7d","played_at":"2026-02-04","score":1,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:41:45.399Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:41:46.351Z - POST /api/play
+[INFO] 2026-02-04T08:41:46.352Z - [PLAY_API] START Request - User ID: "207fd771-3e32-4c8a-a3b7-b26e08f21c7d"
+[INFO] 2026-02-04T08:41:46.510Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"207fd771-3e32-4c8a-a3b7-b26e08f21c7d","played_at":"2026-02-04","score":1,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-02-04T08:41:49.604Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:41:50.630Z - POST /api/play
+[INFO] 2026-02-04T08:41:50.631Z - [PLAY_API] START Request - User ID: "207fd771-3e32-4c8a-a3b7-b26e08f21c7d"
+[INFO] 2026-02-04T08:41:50.805Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"207fd771-3e32-4c8a-a3b7-b26e08f21c7d","played_at":"2026-02-04","score":1,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-02-04T08:41:53.909Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:42:41.822Z - GET /
+[INFO] 2026-02-04T08:42:41.829Z - GET /styles.css
+[INFO] 2026-02-04T08:42:41.830Z - GET /toasts.css
+[INFO] 2026-02-04T08:42:41.831Z - GET /script.js
+[INFO] 2026-02-04T08:42:41.837Z - GET /api/play
+[INFO] 2026-02-04T08:42:42.159Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:42:42.353Z - GET /
+[INFO] 2026-02-04T08:42:42.360Z - GET /styles.css
+[INFO] 2026-02-04T08:42:42.361Z - GET /toasts.css
+[INFO] 2026-02-04T08:42:42.361Z - GET /script.js
+[INFO] 2026-02-04T08:42:42.365Z - GET /api/play
+[INFO] 2026-02-04T08:42:42.540Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:42:49.246Z - GET /script.js
+[INFO] 2026-02-04T08:42:49.408Z - GET /icon.png
+[INFO] 2026-02-04T08:42:50.887Z - GET /sw.js
+[INFO] 2026-02-04T08:42:55.202Z - GET /icon.png
+[INFO] 2026-02-04T08:43:00.660Z - GET /script.js
+[INFO] 2026-02-04T08:43:00.768Z - GET /icon.png
+[INFO] 2026-02-04T08:43:02.233Z - GET /sw.js
+[INFO] 2026-02-04T08:43:05.963Z - GET /icon.png
+[INFO] 2026-02-04T08:43:25.616Z - GET /script.js
+[INFO] 2026-02-04T08:43:25.819Z - GET /icon.png
+[INFO] 2026-02-04T08:43:27.292Z - GET /sw.js
+[INFO] 2026-02-04T08:43:30.818Z - GET /icon.png
+[INFO] 2026-02-04T08:43:37.518Z - GET /icon.png
+[INFO] 2026-02-04T08:43:42.937Z - GET /script.js
+[INFO] 2026-02-04T08:43:43.026Z - GET /icon.png
+[INFO] 2026-02-04T08:43:51.274Z - GET /icon.png
+[INFO] 2026-02-04T08:43:57.337Z - GET /coin-flipper
+[INFO] 2026-02-04T08:43:57.349Z - GET /favicon.ico
+[INFO] 2026-02-04T08:43:58.930Z - GET /sw.js
+[INFO] 2026-02-04T08:44:01.058Z - GET /script.js
+[INFO] 2026-02-04T08:44:01.262Z - GET /icon.png
+[INFO] 2026-02-04T08:44:02.700Z - GET /sw.js
+[INFO] 2026-02-04T08:44:04.321Z - GET /icon.png
+[INFO] 2026-02-04T08:45:04.920Z - 
+🪙 Fliply Dev Server running at:
+[INFO] 2026-02-04T08:45:04.920Z -    http://localhost:3000
+
+[INFO] 2026-02-04T08:45:46.226Z - GET /script.js
+[INFO] 2026-02-04T08:45:46.421Z - GET /icon.png
+[INFO] 2026-02-04T08:45:47.864Z - GET /sw.js
+[INFO] 2026-02-04T08:45:49.301Z - GET /script.js
+[INFO] 2026-02-04T08:45:49.382Z - GET /icon.png
+[INFO] 2026-02-04T08:45:50.883Z - GET /sw.js
+[INFO] 2026-02-04T08:45:53.678Z - GET /sw.js
+[INFO] 2026-02-04T08:45:54.680Z - GET /sw.js
+[INFO] 2026-02-04T08:45:56.464Z - GET /script.js
+[INFO] 2026-02-04T08:45:56.618Z - GET /icon.png
+[INFO] 2026-02-04T08:45:58.140Z - GET /sw.js
+[INFO] 2026-02-04T08:46:01.875Z - GET /
+[INFO] 2026-02-04T08:46:01.913Z - GET /styles.css
+[INFO] 2026-02-04T08:46:01.914Z - GET /toasts.css
+[INFO] 2026-02-04T08:46:01.915Z - GET /script.js
+[INFO] 2026-02-04T08:46:01.999Z - GET /manifest.json
+[INFO] 2026-02-04T08:46:02.019Z - GET /icon.png
+[INFO] 2026-02-04T08:46:07.790Z - POST /api/user
+[INFO] 2026-02-04T08:46:07.791Z - [USER_API] Creating brand new user: b3fd3b1e-9658-45c8-8668-06df868cc5b2
+[INFO] 2026-02-04T08:46:08.044Z - GET /api/play
+[INFO] 2026-02-04T08:46:16.415Z - POST /api/play
+[INFO] 2026-02-04T08:46:16.416Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:46:16.619Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":0,"current_streak":0,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:46:24.922Z - POST /api/play
+[INFO] 2026-02-04T08:46:24.922Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:46:25.164Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":1,"current_streak":1,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:46:28.405Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:46:29.709Z - POST /api/play
+[INFO] 2026-02-04T08:46:29.709Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:46:29.863Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":2,"current_streak":2,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:46:33.056Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:46:47.660Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:47:23.611Z - POST /api/play
+[INFO] 2026-02-04T08:47:23.611Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:47:23.852Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":3,"current_streak":3,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:47:27.018Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:47:32.096Z - POST /api/play
+[INFO] 2026-02-04T08:47:32.097Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:47:32.282Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":4,"current_streak":4,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:47:35.449Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:47:40.496Z - POST /api/play
+[INFO] 2026-02-04T08:47:40.496Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:47:40.747Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":5,"current_streak":5,"lives":2,"is_active":true}
+[INFO] 2026-02-04T08:47:43.926Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:47:50.264Z - POST /api/play
+[INFO] 2026-02-04T08:47:50.264Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:47:50.464Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":5,"current_streak":0,"lives":1,"is_active":true}
+[INFO] 2026-02-04T08:47:53.565Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:48:30.679Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:48:41.156Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:49:31.084Z - POST /api/play
+[INFO] 2026-02-04T08:49:31.085Z - [PLAY_API] START Request - User ID: "b3fd3b1e-9658-45c8-8668-06df868cc5b2"
+[INFO] 2026-02-04T08:49:31.385Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"b3fd3b1e-9658-45c8-8668-06df868cc5b2","played_at":"2026-02-04","score":5,"current_streak":0,"lives":0,"is_active":false}
+[INFO] 2026-02-04T08:49:34.598Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:50:57.663Z - GET /
+[INFO] 2026-02-04T08:50:57.670Z - GET /styles.css
+[INFO] 2026-02-04T08:50:57.670Z - GET /toasts.css
+[INFO] 2026-02-04T08:50:57.671Z - GET /script.js
+[INFO] 2026-02-04T08:50:57.675Z - GET /api/play
+[INFO] 2026-02-04T08:50:57.701Z - GET /manifest.json
+[INFO] 2026-02-04T08:50:57.922Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:51:04.244Z - GET /
+[INFO] 2026-02-04T08:51:04.250Z - GET /styles.css
+[INFO] 2026-02-04T08:51:04.251Z - GET /toasts.css
+[INFO] 2026-02-04T08:51:04.252Z - GET /script.js
+[INFO] 2026-02-04T08:51:04.262Z - GET /manifest.json
+[INFO] 2026-02-04T08:51:20.446Z - POST /api/user
+[INFO] 2026-02-04T08:51:20.446Z - [USER_API] Creating brand new user: 78938d99-7477-489e-b994-24d3cb892fd8
+[INFO] 2026-02-04T08:51:20.578Z - GET /api/play
+[INFO] 2026-02-04T08:51:25.033Z - POST /api/play
+[INFO] 2026-02-04T08:51:25.033Z - [PLAY_API] START Request - User ID: "78938d99-7477-489e-b994-24d3cb892fd8"
+[INFO] 2026-02-04T08:51:25.242Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"78938d99-7477-489e-b994-24d3cb892fd8","played_at":"2026-02-04","score":1,"current_streak":1,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:51:28.401Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:51:30.421Z - POST /api/play
+[INFO] 2026-02-04T08:51:30.421Z - [PLAY_API] START Request - User ID: "78938d99-7477-489e-b994-24d3cb892fd8"
+[INFO] 2026-02-04T08:51:30.614Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"78938d99-7477-489e-b994-24d3cb892fd8","played_at":"2026-02-04","score":2,"current_streak":2,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:51:33.772Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:51:36.711Z - POST /api/play
+[INFO] 2026-02-04T08:51:36.711Z - [PLAY_API] START Request - User ID: "78938d99-7477-489e-b994-24d3cb892fd8"
+[INFO] 2026-02-04T08:51:36.860Z - [PLAY_API] PAYLOAD for Upsert: {"user_id":"78938d99-7477-489e-b994-24d3cb892fd8","played_at":"2026-02-04","score":3,"current_streak":3,"lives":3,"is_active":true}
+[INFO] 2026-02-04T08:51:40.057Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:52:20.661Z - GET /script.js
+[INFO] 2026-02-04T08:52:26.302Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:52:38.909Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:52:49.200Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:53:17.044Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:53:30.919Z - GET /api/leaderboard
+[INFO] 2026-02-04T08:53:39.622Z - GET /api/leaderboard

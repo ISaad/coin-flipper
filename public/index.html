@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fliply - The Viral Coin Flip Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="toasts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121213">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <div class="logo">FLIPLY</div>
+            <div class="header-actions">
+                <button id="leaderboardBtn" aria-label="Leaderboard">🏆</button>
+                <button id="settingsBtn" aria-label="Settings">⚙️</button>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main>
+            <div class="streak-container">
+                <span class="label">CURRENT STREAK</span>
+                <div id="streakDisplay" class="streak-value hidden-value"></div>
+            </div>
+
+            <div class="lives-container">
+                <span class="label">LIVES LEFT</span>
+                <div id="livesDisplay" class="lives-value">❤️❤️❤️</div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="label">TODAY'S BEST</span>
+                    <div id="bestTodayDisplay" class="stat-value">0</div>
+                    <div id="dailyRankDisplay" class="rank-badge hidden">🏆 #1</div>
+                </div>
+            </div>
+
+            <div class="coin-stage">
+                <div id="coin" class="coin">
+                    <div class="side heads">
+                        <div class="symbol">H</div>
+                    </div>
+                    <div class="side tails">
+                        <div class="symbol">T</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls" id="gameControls">
+                <p class="instruction">WILL IT BE...</p>
+                <div class="buttons">
+                    <button class="choice-btn" data-choice="HEADS">HEADS</button>
+                    <button class="choice-btn" data-choice="TAILS">TAILS</button>
+                </div>
+            </div>
+
+            <div id="resultMessage" class="result-message hidden"></div>
+
+            <button id="shareBtn" class="viral-btn hidden">
+                SHARE STREAK 🪙
+            </button>
+        </main>
+
+        <!-- Modals -->
+        <div id="leaderboardModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>LEGENDS</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="tabs">
+                    <button class="tab active" data-tab="daily">TODAY</button>
+                    <button class="tab" data-tab="allTime">ALL TIME</button>
+                </div>
+                <div id="rankingsList" class="rankings-list">
+                    <!-- Injected via JS -->
+                    <div class="loading">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration/Username Modal -->
+        <div id="userModal" class="modal hidden">
+            <div class="modal-content">
+                <h2>WHO ARE YOU?</h2>
+                <div class="input-group">
+                    <input type="text" id="usernameInput" placeholder="Enter Username (max 15)" maxlength="15">
+                    <button id="randomNameBtn" class="small-btn">🎲</button>
+                </div>
+                <button id="saveUserBtn" class="primary-action-btn">LET'S FLIP</button>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settingsModal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>SETTINGS</h2>
+                    <button class="close-modal" id="closeSettings">&times;</button>
+                </div>
+                <div class="settings-list">
+                    <div class="setting-item">
+                        <span>Username</span>
+                        <div class="input-group">
+                            <input type="text" id="editUsernameInput" placeholder="Name">
+                            <button id="updateNameBtn" class="small-btn">Update</button>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <span>Appearance</span>
+                        <button id="themeToggleBtn" class="primary-action-btn">Toggle Dark/Light</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
